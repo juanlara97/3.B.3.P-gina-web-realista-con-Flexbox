@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://kit.fontawesome.com/80da1fbe06.js" crossorigin="anonymous"></script>
+<style>
+    *{
+        font-family: Arial;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    nav {
+        background-color: darkslategray;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    nav a {
+       color: white;
+       text-decoration: none;
+       padding: 10px;
+    }
+    nav a:hover {
+        color: yellow;
+        text-shadow: 1px 1px 5px black;
+        font-weight: bold;
+    }
+    header {
+        background-image: url(imagen-header.jpg);
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header div {
+        text-align: center;
+    }
+    header div h1 {
+        color: green;
+        text-shadow: 3px 3px 3px black;
+        font-size: 4em;
+    }
+    header div h2 {
+        color: white;
+        text-shadow: 3px 3px 3px black;
+      
+    }
+    .titulo {
+        text-align: center;
+        margin-top: 20px;
+        color: lightseagreen;
+    }
+    #caja-central {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    #caja-central #izq {
+        width: 50%;
+    }
+    #caja-central #der {
+        width: 50%;
+        box-shadow: 3px 3px 30px black;
+    }
+    #caja-central #der #caja-texto {
+        padding: 30px;
+    }
+    #izq img {
+        width: 70%;
+    }
+    #clientes {
+        background-color: antiquewhite;
+    }
+    #contenedor-clientes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cliente {
+        width: 30%; 
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+        font-style: italic;
+        border-radius: 50%;
+    }
+    .cliente img {
+        width: 80%;
+        border-radius: 50%;
+    }
+    .cliente:hover {
+      
+        text-shadow: 1px 1px 1px grey;
+        font-weight: bolder;
+        font-size: large;
+        text-transform: uppercase;
+        box-shadow: 3px 3px 3px black;
+    }
+  
+    footer {
+        background-color: gray;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #caja-superior {
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid;
+    }
+    .caja-inferior {
+        width: 30%;
+        padding: 20px;
+        text-align: center;
+    }
+    .redes {
+        font-size: x-large;
+    }
+    .redes:hover {
+        text-shadow: 2px 2px 2px darkblue;
+    }
+    #email {
+        text-decoration: none;
+    }
+    #email:hover {
+        text-shadow: 2px 2px 2px darkblue;
+    }
+    .fa-solid {
+        color: yellow;
+        text-shadow: 3px 3px 3px black;
+    }
+   
+</style>
+<body>
+    <header>
+        <div>
+            <h1>Bancalia</h1>
+            <h2>Inversiones</h2>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Quienes somos</a>
+        <a href="#">Invertir</a>
+        <a href="#">Contacto</a>
+    </nav>
+    
+    
+    <section id="quienes-somos">
+        <h2 class="titulo">Quienes somos </h2>
+        <div id="caja-central">
+            <div id="izq">
+                <img src="imagen-section1.jpg" alt="">
+            </div>
+            <div id="der">
+                <div id="caja-texto"><h2>Un equipo multidisciplinar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio, totam est itaque iusto cupiditate adipisci blanditiis, facilis tempora inventore alias explicabo atque incidunt quis magni enim temporibus natus quam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, tenetur praesentium? Nesciunt nostrum provident minima quia nulla qui! Doloremque nam consequuntur magnam quia, voluptatum sequi velit natus! Consequuntur, est laudantium.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, quia dolorum! Unde quo dolores tempore sequi tempora adipisci corporis pariatur. Nihil voluptatibus eligendi quas iure, quibusdam quos expedita laborum? Porro.
+                </p>
+            </div>
+            </div>     
+        </div>    
+        
+    </section>
+    <section id="clientes">
+        <h2 class="titulo">Opiniones de nuestros clientes</h2>
+        <div id="contenedor-clientes">
+            <div class="cliente">
+                <img src="cliente-1.jpg" alt="">
+                <h3>Carlos</h3>
+                <p>"Exelente servicio"</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="cliente">
+                <img src="cliente-2.jpg" alt="">
+                <h3>Robert</h3>
+                <p>"Profesionales en lo que hacen"</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="cliente">
+                <img src="cliente-3.jpg" alt="">
+                <h3>Marta</h3>
+                <p>"Gracias a ellos aprendí a diversificar"</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p id="caja-superior">Contacte con nosotros. Trabajamos los 365 dias del año</p>
+        <div class="caja-inferior">
+            <h2>Enlaces</h2>
+            <a href="#" class="redes"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"class="redes"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"class="redes"><i class="fa-brands fa-facebook"></a></i>
+            
+        </div>
+        <div class="caja-inferior">
+            <h2>Estamos en</h2>
+            <p>Av. Los institutos
+            </p>
+            <p>13600, Alcázar de san juan</p>
+        </div>
+        <div class="caja-inferior">
+            <h2>Email</h2>
+            <a href="#" id="email">francolara97@gmail.com</a>
+        </div>
+    </footer>
+</body>
+</html>
